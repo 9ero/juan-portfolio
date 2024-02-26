@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photoJuan from "@/assets/Images/juanPhoto.webp"
+import photoJuan from "@/assets/Images/JuanPhoto.webp"
 import {BsGithub, BsFillEnvelopeFill, BsWhatsapp, BsLinkedin, BsFiletypePdf} from 'react-icons/bs'
 import {FaFigma} from 'react-icons/fa'
 import { Lexend_Exa } from "next/font/google";
