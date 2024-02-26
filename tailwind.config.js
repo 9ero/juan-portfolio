@@ -11,6 +11,9 @@ module.exports = {
       'secondary': '#000814',
       'white': '#ffffff',
       'contrast':'#B1D71C',
+      'transparent': '#00000000',
+      'primary-transparent': '#580c657c',
+      'white-transparent' : '#ffffffad'
       
     },
     extend: {

@@ -13,9 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${sora.className} flex flex-col items-center justify-center min-h-full bg-gradient-to-b bg-no-repeat h-full from-primary to-secondary text-white py-16 scroll-smooth`}>
-        <Header/>
+      <body>
+      <Header className={sora.className}/>
+      <main className={`${sora.className} flex flex-col items-center justify-center min-h-full bg-gradient-to-b bg-no-repeat w-full from-primary to-secondary text-white py-16 scroll-smooth `}>
         {children}
+      </main>
       </body>
     </html>
   )

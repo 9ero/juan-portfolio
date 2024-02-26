@@ -18,7 +18,7 @@ export default function loadingComponents(){
     return(
     <>
       <div className={`${style.mainContainer} ${blinker.className} flex flex-col p-6 sm:p-16 items-center mt-32`}>
-      <Image priority src={manImage} alt='A meditating man' width={400} />
+      <Image src={manImage} alt='A meditating man' width={400} loading='lazy' />
       <p className="text-center text-2xl pt-5">&quot {quote.phrase}</p>
       <p className="md:w-1/2 text-right text-3xl font-semibold">{"- "+quote.author}</p>
       </div>

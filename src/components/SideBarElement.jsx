@@ -13,7 +13,6 @@ export default function SideBarElement({ children, position }) {
     }
     
     function checkPosition(){
-        console.log('position: ',position,' Scroll: ',window.scrollY)
         if(window.scrollY===position){
             setActive(true)
         }else{
@@ -29,6 +28,6 @@ export default function SideBarElement({ children, position }) {
     }, [active])
 
     return <>
-        <li onPointerEnter={hoverHandler} className={active ? ' bg-white scale-110 text-secondary p-2 transition-all' : 'transition-all'}>{children}</li>
+        <li onPointerEnter={hoverHandler} className={active ? ' bg-white scale-110 text-secondary p-2 transition-all pl-6 pr-10' : 'transition-all'}>{children}</li>
     </>
 }
