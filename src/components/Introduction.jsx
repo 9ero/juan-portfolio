@@ -5,12 +5,13 @@ import {FaFigma} from 'react-icons/fa'
 import { Lexend_Exa } from "next/font/google";
 import Link from "next/link";
 
+
 const lexend = Lexend_Exa({subsets: ['latin-ext'], weight:['300',]})
 
 export default function Introduction(){
-    return <>
-    <section className="w-full flex flex-col md:flex-row lg:w-4/5 lg:border-2 lg:boder-white items-center">
-            <div className="w-full md:w-1/2">
+    return <section className="h-screen w-full flex justify-center items-center">
+    <div className= "w-full flex flex-col md:flex-row lg:w-4/5 md:border-2 border-white  lg:boder-white items-center">
+            <div className="w-full md:w-1/2 ">
               <div className="sm:w-2/3">
                 <Image priority src={photoJuan} width={'cover'} height={'auto'}  alt="Juan Miguel Fernandez's profile photo"/>
               </div>
@@ -33,6 +34,6 @@ export default function Introduction(){
                 <Link href={'/'}  className=" text-center border-2 mt-6 border-white  w-52 py-2 self-center  hover:bg-white hover:text-secondary hover:scale-110 hover:font-medium transition-all">More about me</Link>
                 <Link href={'/JuanFernandezCV.pdf'} locale={false} download="JuanFernandezCV" target="_blank" className="border-2 mt-6 border-white  w-56 py-2 self-center  hover:bg-white hover:text-secondary hover:scale-110 hover:font-medium transition-all flex justify-center items-center gap-1"><BsFiletypePdf className="text-2xl"/> Download my CV</Link>
             </div>
-          </section>
-</>
+          </div>
+</section>
 }

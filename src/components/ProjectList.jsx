@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
-import AddIconTo from "./Skills";
+import  { Icons } from "./Skills";
 
 
 export default function ProjectList({ projects }) {
@@ -30,14 +30,14 @@ export default function ProjectList({ projects }) {
                             <p>Framework: </p>
                             <ul>
                                 {project.frameworks.map((framework, index) => (
-                                    <li key={index} className="flex items-center"><AddIconTo>{framework}</AddIconTo></li>
+                                    <li key={index} className="flex items-center">{Icons[framework]}{framework}</li>// Using [] compares the string with the props
                                 ))}
 
                             </ul>
                             <p>Language: </p>
                             <ul>
                                 {project.languages.map((language, index) => (
-                                    <li key={index} className="flex items-center"><AddIconTo>{language}</AddIconTo></li>
+                                    <li key={index} className="flex items-center">{Icons[language]}{language}</li>
                                 ))}
 
                             </ul>

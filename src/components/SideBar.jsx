@@ -3,7 +3,7 @@ import SideBarElement from "./SideBarElement"
 
 
 export default function SideBar(){
-    const listElements = [{name: 'Introduction', position: 0},{name: 'Portfolio', position: 800},{name: 'Contact', position: 1100}]
+    const listElements = [{name: 'Introduction', position: 0},{name: 'Portfolio', position: 1100},{name: 'Projects', position: 2100},{name: 'Contact', position: 3000},]
 
     return <div className="invisible lg:visible fixed top-0 h-full w-auto flex justify-end items-center  p-5 self-end mr-5">
     <ul className="flex flex-col items-end gap-3 ">

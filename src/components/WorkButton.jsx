@@ -2,7 +2,7 @@
 
 export default function WorkButton(){
     function clickHandler(){
-        window.scrollTo(0, 500);
+        window.scrollTo(0, 1000);
     }
     return (
         <>

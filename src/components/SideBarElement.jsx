@@ -13,21 +13,24 @@ export default function SideBarElement({ children, position }) {
     }
     
     function checkPosition(){
-        if(window.scrollY===position){
+        if(window.scrollY>=(position-400)&window.scrollY<=(position+400)){
             setActive(true)
         }else{
             setActive(false)
         }
     }
-    useEffect(()=>{
+
+    useEffect(() => {
         checkPosition()
-        const interval=setInterval(()=>{
-            checkPosition()
-        }, 500)
-        return ()=>clearInterval(interval)
-    }, [active])
+        const onScroll = () => {
+          checkPosition()
+        };
+        window.addEventListener("scroll", onScroll);
+    
+        return () => window.removeEventListener("scroll", onScroll);
+      }, [active]);
 
     return <>
-        <li onPointerEnter={hoverHandler} className={active ? ' bg-white scale-110 text-secondary p-2 transition-all pl-6 pr-10' : 'transition-all'}>{children}</li>
+        <li onPointerEnter={hoverHandler} className={active ? ' bg-white scale-110 text-secondary p-2 transition-all pl-4 pr-8' : 'transition-all backdrop-blur p-1'}>{children}</li>
     </>
 }
