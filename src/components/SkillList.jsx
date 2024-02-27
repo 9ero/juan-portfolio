@@ -12,7 +12,7 @@ const Skills = [
     {name: 'Google Firebase', Language: 'Java, Kotlin, JavaScript', level: 'Mid'},
 ]
 
-export default function(){
+export default function SkillList(){
     return (
     <div className="grid grid-cols-3 gap-4 items-center h-96 overflow-y-scroll">
     <h2 className="text-base">Name</h2>

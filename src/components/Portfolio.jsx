@@ -1,7 +1,6 @@
 import Projects from "@/components/Projects";
 import Link from "next/link";
 import SkillList from "@/components/SkillList";
-import Contact from "@/components/Contact";
 
 
 export default function Portfolio(){
