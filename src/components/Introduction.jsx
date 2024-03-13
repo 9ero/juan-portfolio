@@ -9,14 +9,14 @@ import Link from "next/link";
 const lexend = Lexend_Exa({subsets: ['latin-ext'], weight:['300',]})
 
 export default function Introduction(){
-    return <section className="h-screen w-full flex justify-center items-center">
-    <div className= "w-full flex flex-col md:flex-row lg:w-4/5 md:border-2 border-white  lg:boder-white items-center">
+    return <section className="min-h-screen w-full flex justify-center items-center">
+    <div className= "w-full flex flex-col md:flex-row lg:w-4/5 md:border-2 border-white  lg:boder-white items-center ">
             <div className="w-full md:w-1/2 ">
               <div className="sm:w-2/3">
                 <Image priority src={photoJuan} width={'cover'} height={'auto'}  alt="Juan Miguel Fernandez's profile photo"/>
               </div>
             </div>
-            <div className="w-full md:w-1/2 pt-8 md:px-16 px-5 pb-16 flex flex-col bg-primary">
+            <div className="w-full md:w-1/2 pt-8 md:px-16 px-5 pb-16 flex flex-col bg-primary overflow-x-scroll">
               <h2 className="text-3xl font-medium mb-2">Welcome to my portfolio</h2>
               <p className="pt-2 text-lg ">My name is <span className="font-medium text-contrast text-2xl">Juan</span>, I am happy for your visit. Take a look at my projects below. </p>
               <h2 className="text-3xl font-medium  mt-6 mb-4">My contact info</h2>

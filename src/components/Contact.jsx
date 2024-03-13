@@ -24,6 +24,7 @@ export default function Contact() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className='flex flex-col items-start gap-1 p-20 sm:border-2 border-white w-fit self-center'>
+      <h1 className='text-3xl'>Contact</h1>
       <label className='mt-5'>Full name</label>
       <input required className='text-secondary px-2' type="text" name="user_name" placeholder='Jhon Doe' />
       <label className='mt-5'>Company</label>

@@ -1,12 +1,9 @@
+import Navbar from "./Navbar";
+import { Sora } from 'next/font/google'
+ const sora = Sora({ subsets: ['latin'], weight: ['200','300', '400','500'] })
 
 export default function Header() {
-    return <nav className="z-10 flex sm:flex-row flex-col justify-center fixed w-full top-0 text-white">
-        <ul className="flex flex-col sm:flex-row justify-center sm:justify-evenly bg-primary sm:border-2 border-white py-4 sm:w-4/5 md:w-3/5  sm:mt-10 text-lg  items-center">
-            <li className="">Home</li>
-            <li>Projects</li>
-            <li>About Me</li>
-            <li>skills</li>
-            <li>Contact</li>
-        </ul>
+    return <nav className={`${sora.className} z-10 flex justify-end  fixed w-screen sm:top-10 sm:right-10 text-white`}>
+        <Navbar />
     </nav>
 }

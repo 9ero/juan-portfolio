@@ -20,7 +20,6 @@ export default function Home() {
       <Introduction/>
       <Portfolio/>
       <section className="w-full h-screen flex flex-col gap-8 bg-gradient-to-r from-transparent to-primary p-5 py-10">
-        <h1 className='text-3xl'>Contact</h1>
         <Contact/>
       </section>
       
