@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
       <Header className={sora.className}/>
-      <main className={`${sora.className} flex flex-col items-center justify-center min-h-full gap-24 bg-gradient-to-b bg-no-repeat w-screen from-primary to-secondary text-white py-16`}>
+      <main className={`${sora.className} flex flex-col items-center justify-center min-h-max gap-24 bg-gradient-to-b bg-no-repeat w-screen from-primary to-secondary text-white`}>
         {children}
       </main>
       </body>

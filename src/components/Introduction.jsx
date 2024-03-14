@@ -16,7 +16,7 @@ export default function Introduction(){
                 <Image priority src={photoJuan} width={'cover'} height={'auto'}  alt="Juan Miguel Fernandez's profile photo"/>
               </div>
             </div>
-            <div className="w-full md:w-1/2 pt-8 md:px-16 px-5 pb-16 flex flex-col bg-primary overflow-x-scroll">
+            <div className="w-full md:w-1/2 pt-8 md:px-16 px-5 pb-16 flex flex-col bg-primary overflow-x-scroll sm:overflow-x-auto">
               <h2 className="text-3xl font-medium mb-2">Welcome to my portfolio</h2>
               <p className="pt-2 text-lg ">My name is <span className="font-medium text-contrast text-2xl">Juan</span>, I am happy for your visit. Take a look at my projects below. </p>
               <h2 className="text-3xl font-medium  mt-6 mb-4">My contact info</h2>

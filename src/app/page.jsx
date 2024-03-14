@@ -19,7 +19,7 @@ export default function Home() {
       </section>
       <Introduction/>
       <Portfolio/>
-      <section className="w-full h-screen flex flex-col gap-8 bg-gradient-to-r from-transparent to-primary p-5 py-10">
+      <section className="w-full min-h-screen flex flex-col gap-8 bg-gradient-to-r from-transparent to-primary p-5 py-10">
         <Contact/>
       </section>
       

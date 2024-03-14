@@ -23,17 +23,19 @@ export default function Contact() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='flex flex-col items-start gap-1 p-20 sm:border-2 border-white w-fit self-center'>
-      <h1 className='text-3xl'>Contact</h1>
+    <div className='sm:border-2 border-white w-max'>
+      <h1 className='text-3xl pt-10 pl-10'>Contact</h1>
+    <form ref={form} onSubmit={sendEmail} className='flex flex-col items-start gap-1 px-8 sm:px-28 py-12  w-fit self-center'>
       <label className='mt-5'>Full name</label>
-      <input required className='text-secondary px-2' type="text" name="user_name" placeholder='Jhon Doe' />
+      <input required className='text-secondary px-2 py-1' type="text" name="user_name" placeholder='Jhon Doe' />
       <label className='mt-5'>Company</label>
-      <input required className='text-secondary px-2' type="text" name="user_name" placeholder='(optional)' />
+      <input required className='text-secondary px-2 py-1' type="text" name="user_name" placeholder='(optional)' />
       <label className='mt-2'>Email</label>
-      <input required className='text-secondary px-2' type="email" name="user_email" placeholder='email@example.com'/>
+      <input required className='text-secondary px-2 py-1' type="email" name="user_email" placeholder='email@example.com'/>
       <label className='mt-2'>Message</label>
-      <textarea className='text-secondary px-2' name="message" placeholder='Type your message here!'/>
+      <textarea cols={25} rows={6}  className='text-secondary px-2 py-1 resize-none' name="message" placeholder='Type your message here!'/>
       <input required className='py-2 px-5 mt-5 border-2 border-white hover:scale-110 hover:bg-white hover:text-secondary' type="submit" value="Send" />
     </form>
-  );
-};
+    </div>
+  )
+}

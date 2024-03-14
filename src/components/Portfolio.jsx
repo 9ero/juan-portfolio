@@ -4,7 +4,7 @@ import SkillList from "@/components/SkillList";
 
 
 export default function Portfolio(){
-    return <div className="flex flex-row min-h-screen w-full justify-center items-center mt-8 gap-8 flex-wrap">
+    return <div className="flex flex-row min-h-screen w-full justify-center items-center  gap-8 flex-wrap">
         <div className="w-full lg:w-3/5 lg:border-2 border-white p-5 py-10 ">
             <Link href='/projects' className="hover:text-contrast"><h1 className="text-3xl pb-5">Projects</h1></Link>
             <Projects/>
