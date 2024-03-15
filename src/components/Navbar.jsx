@@ -38,7 +38,7 @@ export default function Navbar(){
         setFirst(false)
         window.addEventListener("scroll", scrollHanlder);
         return ()=>window.removeEventListener("scroll", scrollHanlder)
-    },[expanded])
+    },[expanded, CheckDeviceWith])
 
    if(expanded){
     return (<>

@@ -28,7 +28,7 @@ export default function SideBarElement({ children, position }) {
         window.addEventListener("scroll", onScroll);
     
         return () => window.removeEventListener("scroll", onScroll);
-      }, [active]);
+      }, [active, checkPosition]);
 
     return <>
         <li onPointerEnter={hoverHandler} className={active ? ' bg-white scale-110 text-secondary p-2 transition-all pl-4 pr-8' : 'transition-all backdrop-blur p-1'}>{children}</li>
